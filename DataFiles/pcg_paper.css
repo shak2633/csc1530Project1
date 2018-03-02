@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Demitri Shakhray
+   Date:   2/22/18
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+
+/* a. Layout and Design */
+
+body {
+    min-width: 640px;
+    max-width: 960px;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/* b. Display Properties */
+
+img, address, nav, section {
+    display: block;
+}
+
+nav > ul > li > a {
+    display: block;
+}
+
+nav#stories > ul > li > a {
+    display: inline;
+}
+
+
+/* c. Width and Height styles */
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 85%;
+}
+
+address, section {
+    width: 80%;
+}
+
+nav {
+    width: 15%;
+}
+
+article aside, article img {
+    max-width: 50%;
+}
+
+article aside {
+    min-width: 35%;
+}
+
+h1, h2 {
+    width: 95%%;
+}
+
+section article img {
+    height: 150px;
+}
+
+
+/* d. Float and Clear styles */
+
+address p {
+    float: left;
+}
+
+nav.vertical {
+    clear: left;
+    float: left;
+}
+
+section {
+    clear: right;
+    float: right;
+}
+
+article img, article aside {
+    float: right;
+}
+
+/* e. Container Expansion styles */
+
+body::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+address::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/* f. Margin, Padding, Maximum and Minimum Width styles */
+
+header img {
+    margin-left: auto;
+}
+
+address {
+    min-width: 700px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+address p {
+    margin: 1% auto;
+    padding: 0 5%;
+}
+
+nav.vertical {
+    margin: 2% 5% 0 0;
+}
+
+nav.vertical > ul {
+    margin: 5% 0;
+    padding: 0;
+}
+
+nav#stories > ul {
+    padding-left: 2%;
+}
+
+nav.vertical > ul > li {
+    margin: 2% 0;
+    padding: 0;
+}
+
+nav.vertical > ul > li > a {
+    padding: 2% 10%;
+}
+
+nav#stories > ul > li > a {
+    padding: 5%;
+}
+
+nav.vertical > ul > li.newgroup {
+    margin-top: 10%;
+}
+
+section, article p {
+    margin: 2% 0;
+}
+
+h1, h2 {
+    padding-left: 5%;
+    margin: 0;
+}
+
+article img, article aside {
+    margin: 3%;
+}
+
+
+/* g. Positioning styles */
+
+header {
+    position: relative;
+    right: 5%;
+}
+
+header img {
+    position: relative;
+    left: 10%;
+}
+
+address {
+    position: relative;
+    left: 10%;
+}
+
+
+/* HTML and Body styles */
+
+html {
+    background-color: peru;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header styles */
+
+header {
+    background-color: black;
+}
+
+header img {
+    color: white;
+}
+
+header address {
+    color: white;
+    background-color: black;
+    font-style: normal;
+}
+
+header address p {
+    font-size: .75em;
+}
+
+/* Navigation Styles */
+
+nav.vertical {
+    font-family: Quicksand, sans-serif;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a:visited, nav > ul > li > a:link {
+    color: black;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    background-color: peru;
+    color: blanchedalmond;
+}
+
+
+
+/* Story Navigation styles */
+
+nav#stories > ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+nav#stories > h2 {
+    font-size: 1em;
+    color: black;
+    background-color: cadetblue;
+}
+
+nav#stories > ul > li > a:hover, nav#stories > ul > li > a:active {
+    background-color: transparent;
+    color: rgb(67, 109, 112);  
+}
+
+/* Section and Article styles */
+
+
+
+article h1 {
+    background-color: goldenrod;
+    font-size: 1.2em;
+    font-family: Quicksand, sans-serif;
+}
+
+article p {
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+
+article aside {
+    box-sizing: border-box;
+}
+    
+
+aside h2 {
+    font-size: 1.2em;
+    box-sizing: border-box;
+    background-color: palegoldenrod;
+    font-family: Quicksand, sans-serif;
+}
+
+aside p {
+    font-size: .8em;
+    text-indent: 0;
+}
